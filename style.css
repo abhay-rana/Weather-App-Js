@@ -1,0 +1,222 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main{
+    width:100vw;
+    height: 100vh;
+    background-color: lightblue;
+    display:grid;
+    place-items:center;
+}
+
+.box{
+    width:40vw;
+    height:max-content;
+    background-color: white;
+    box-shadow: 0px 0px 20px 2px pink;
+    border-radius: 1rem;
+}
+
+.box h1{
+    text-align: center;
+    padding: 20px;
+    /* color:tomato */
+}
+
+
+.box .head{
+    border-bottom:2px solid violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box .head .fas{
+    font-size: 35px;
+    color: red;
+    /* box-shadow: 0px 0px 5px 3px; */
+    
+}
+
+/* we have to hide this box after the user input */
+.city{
+    /* padding: 20px; */
+    margin:20px 25px 35px 20px;
+    /* display: none; */
+}
+.city p{
+    font-size:15px;
+    /* text-align: center; */
+    font-size: 25px;
+}
+
+.city input{
+    /* padding: 5px; */
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    /* margin: 15px; */
+    border: 1px solid lightcoral;
+    outline: none;
+    border-radius: 7px;
+    font-size: 20px;
+    
+}
+
+.city input::placeholder{
+    color:#e07e0d;
+}
+
+.city input:valid{
+    /* background-color:red; */
+    border:2px solid green
+}
+
+.city button{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 7px;
+    color: white;
+    font-size: 18px;
+    background-color: violet;
+    /* background-color: violet; */
+}
+
+.city .separator{
+    height: 1px;
+    width: 100%;
+    margin: 20px 0px;
+    background: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.city .separator::before{
+    content: "or";
+    font-size: 19px;
+    padding: 0px 8px;
+    background: white;
+}
+
+.city p{
+    background-color: lightblue;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 7px;
+    padding-left: 20px;
+
+}
+.box .weather-part{
+    margin:30px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* this will hide initially after user input this will show */
+.box .weather-part{
+    display: none;
+}
+
+.weather-part img{
+    max-width: 80px;
+}
+
+.weather-part .temp{
+    display: flex;
+    font-size: 72px;
+    font-weight: 500;
+}
+
+.weather-part .temp .numb{
+    font-weight: 600;
+}
+
+.weather-part .temp .deg{
+    font-size: 30px;
+    display: block;   
+}
+
+.weather-part .weather{
+    font-size: 21px;
+    text-align: center;
+    margin: -5px 20px 15px;
+}
+.weather-part .bottom-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    border: 2px solid black;
+    border-radius: 7px;
+    /* justify-content: space-around; */
+    /* background-color: pink; */
+}
+.weather-part .location{
+    margin-bottom: 10px;
+    /* border: 2px solid red; */
+    /* width: 100%; */
+    height: 100%;
+    font-size: 22px;
+    /* padding: 0psx; */
+    padding-right: 15px;
+}
+
+.weather-part .location i{
+    padding-left: 15px;
+    font-size: 20px;
+}
+.weather-part .columnfeels{
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100%;
+    width: 100%;
+    border-width: 1px 0px 1px 2px;
+    border-color: yellowgreen;
+    border-style: solid;
+}
+.weather-part .columnhumidity{
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-width: 1px 2px 1px 2px;
+    border-color: red green yellow black;
+    border-style: solid;
+}
+
+.weather-part i{
+    margin-right: 15px;
+    font-size: 25px;
+    color: darkblue;
+}
+
+.bottom-details .details .temp-2{
+    display: flex;
+    font-size: 22px;
+    /* color: white; */
+}
+
+.bottom-details .details .deg{
+    /* background-color: white; */
+    font-size: 12px;
+    margin-right: 3px;
+}
